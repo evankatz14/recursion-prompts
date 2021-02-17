@@ -1247,7 +1247,7 @@
 
 
 
-    describe.only('23. Count value in object', function() {
+    describe('23. Count value in object', function() {
       var originalCountValuesInObj, input;
 
       before(function() {
@@ -1293,7 +1293,7 @@
 
 
 
-    describe('24. Replace keys in object', function() {
+    describe.only('24. Replace keys in object', function() {
       var originalReplaceKeysInObj, input, output;
 
       before(function() {
@@ -1323,7 +1323,7 @@
         expect(input).to.equal(output);
       });
 
-      it('should return object containing renamed keys', function() {
+      it.only('should return object containing renamed keys', function() {
         replaceKeysInObj(input, 'e', 'f');
 
         expect(input).to.have.all.keys('f','t','y');
